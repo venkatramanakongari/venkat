@@ -9,7 +9,7 @@ pipeline {
                    #Download the apache tomcat.
                     pwd
                     wget http://apache.mirror.iweb.ca/tomcat/tomcat-9/v9.0.27/bin/apache-tomcat-9.0.27.zip
-                    unzip apache-tomcat-9.0.27.zip
+                    yes | unzip apache-tomcat-9.0.27.zip
                     cd apache-tomcat-9.0.27
                     #set the psermissions of statup, shutdown and catalina script.
                     chmod 755 bin/*.sh
