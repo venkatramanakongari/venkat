@@ -32,7 +32,8 @@ pipeline {
                  sh '''
                 #start tomcat
                 pwd
-                 sh apache-tomcat-9.0.27/bin/startup.sh
+                cd apache-tomcat-9.0.27/bin
+                ./startup.sh
 
                 '''
             }
